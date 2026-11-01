@@ -43,10 +43,10 @@ Feature: Products
         Then the user should see "BRAND - H&M PRODUCTS"
         And the products list should be visible
 
-# # TC21
-# Scenario: Add a review on a product
-#     When the user clicks on "Products"
-#     And the user views the first product
-#     Then the user should see "Write Your Review"
-#     When the user submits a review with name "Prakash", email "reviewer@example.com" and review "Good quality, fits well"
-#     Then the user should see "Thank you for your review."
+    # TC21
+    Scenario: Add a review on a product
+        When the user clicks on "Products"
+        And the user views the first product
+        Then the user should see "Write Your Review"
+        When the user submits a review with name "pw_test_prakash", email "prakashsingh01081994@gmail.com" and review "Good quality, fits well"
+        Then the user should see "Thank you for your review."

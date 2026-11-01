@@ -46,3 +46,7 @@ Then('the brands sidebar should be visible', async ({ leftSidebar }) => {
 When('the user selects brand {string}', async ({ leftSidebar }, brand: string) => {
     await leftSidebar.selectBrand(brand);
 });
+
+When('the user submits a review with name {string}, email {string} and review {string}', async ({ productDetailsPage }, name: string, email: string, review: string) => {
+    await productDetailsPage.submitReview(name, email, review);
+});
