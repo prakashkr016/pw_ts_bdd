@@ -24,24 +24,24 @@ Feature: Products
         Then the user should see "SEARCHED PRODUCTS"
         And every product shown should contain "Jeans" in its name
 
-# # TC18
-# Scenario: View products by category
-#     Then the category sidebar should be visible
-#     When the user selects category "Women" and sub-category "Dress"
-#     Then the user should see "WOMEN - DRESS PRODUCTS"
-#     When the user selects category "Men" and sub-category "Tshirts"
-#     Then the user should see "MEN - TSHIRTS PRODUCTS"
+    # TC18
+    Scenario: View products by category
+        Then the category sidebar should be visible
+        When the user selects category "Women" and sub-category "Dress"
+        Then the user should see "WOMEN - DRESS PRODUCTS"
+        When the user selects category "Men" and sub-category "Tshirts"
+        Then the user should see "MEN - TSHIRTS PRODUCTS"
 
-# # TC19
-# Scenario: View products by brand
-#     When the user clicks on "Products"
-#     Then the brands sidebar should be visible
-#     When the user selects brand "Polo"
-#     Then the user should see "BRAND - POLO PRODUCTS"
-#     And the products list should be visible
-#     When the user selects brand "H&M"
-#     Then the user should see "BRAND - H&M PRODUCTS"
-#     And the products list should be visible
+    # TC19
+    Scenario: View products by brand
+        When the user clicks on "Products"
+        Then the brands sidebar should be visible
+        When the user selects brand "Polo"
+        Then the user should see "BRAND - POLO PRODUCTS"
+        And the products list should be visible
+        When the user selects brand "H&M"
+        Then the user should see "BRAND - H&M PRODUCTS"
+        And the products list should be visible
 
 # # TC21
 # Scenario: Add a review on a product

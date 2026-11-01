@@ -30,3 +30,19 @@ Then('every product shown should contain {string} in its name', async ({ product
         expect(name.toLowerCase()).toContain(text.toLowerCase());
     }
 });
+
+Then('the category sidebar should be visible', async ({ leftSidebar }) => {
+    await expect(leftSidebar.categoryPanel).toBeVisible();
+});
+
+When('the user selects category {string} and sub-category {string}', async ({ leftSidebar }, category: string, subCategory: string) => {
+    await leftSidebar.selectCategory(category, subCategory);
+});
+
+Then('the brands sidebar should be visible', async ({ leftSidebar }) => {
+    await expect(leftSidebar.brandsPanel).toBeVisible();
+});
+
+When('the user selects brand {string}', async ({ leftSidebar }, brand: string) => {
+    await leftSidebar.selectBrand(brand);
+});
